@@ -557,6 +557,67 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <div>
+          <h1 class="modal-title">
+            Leave your contacts and we will call you back
+          </h1>
+          <!-- Form -->
+          <form>
+            <!-- Name -->
+            <div>
+              <label class="names-label" for="user-name">Name</label>
+              <div>
+                <input id="user-name" type="text" name="user-name" />
+                <svg width="18" height="18" class="name-icon-person">
+                  <use href="./images/icons.svg#person-black"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- Phone -->
+            <div>
+              <label class="names-label" for="phone-number">Phone</label>
+              <div>
+                <input id="phone-number" type="tel" name="phone-number" />
+                <svg width="18" height="18" class="name-icon-person">
+                  <use href="./images/icons.svg#phone-black"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- Email -->
+            <div>
+              <label class="names-label" for="Email">Email</label>
+              <div>
+                <input type="email" name="email" />
+                <svg width="18" height="18" class="name-icon-person">
+                  <use href="./images/icons.svg#email-black"></use>
+                </svg>
+              </div>
+            </div>
+            <!-- Comment -->
+            <div>
+              <label class="names-label"> Comment</label>
+              <div>
+                <textarea
+                  name="feedback"
+                  rows="5"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </div>
+            <!-- CheckBox -->
+            <div>
+              <input type="checkbox" />
+              <div>
+                <label class="names-label" for="offers"
+                  >I accept the terms and conditions of the
+                  <span class="span-label-checkbox">Privacy Policy</span></label
+                >
+              </div>
+            </div>
+            <!-- Send button -->
+            <button class="submit-button-modal" type="submit">Send</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

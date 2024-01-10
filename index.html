@@ -528,16 +528,18 @@
           </ul>
         </div>
         <!-- Form Subscrition -->
-        <div>
+        <div class="form-footer-div">
           <p class="subscribe-title">Subscribe</p>
           <form name="signup_form" autocomplete="on" novalidate>
-            <label class="e-mail-block">
-              Email
-              <input type="email" name="email" />
-            </label>
+            <div class="test">
+              <label class="e-mail-block">
+                Email
+                <input class="footer-form-input" type="email" name="email" />
+              </label>
+            </div>
             <button type="submit" class="button-font">
               <p class="subscribe-button">Subscribe</p>
-              <svg width="24" height="24">
+              <svg class="svg-footer-color" width="24" height="24">
                 <use href="./images/icons.svg#Frame"></use>
               </svg>
             </button>
@@ -557,47 +559,62 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <div>
+        <div class="form-body">
           <h1 class="modal-title">
             Leave your contacts and we will call you back
           </h1>
           <!-- Form -->
-          <form>
+          <form action="" autocomplete="off">
             <!-- Name -->
-            <div>
+            <div class="names-distante-gab">
               <label class="names-label" for="user-name">Name</label>
-              <div>
-                <input id="user-name" type="text" name="user-name" />
-                <svg width="18" height="18" class="name-icon-person">
+              <div class="input-blue-square">
+                <svg width="18" height="24" class="name-icon-person">
                   <use href="./images/icons.svg#person-black"></use>
                 </svg>
+                <input
+                  class="input-md w-h-email-phone-name"
+                  id="user-name"
+                  type="text"
+                  name="user-name"
+                />
               </div>
             </div>
             <!-- Phone -->
-            <div>
+            <div class="names-distante-gab">
               <label class="names-label" for="phone-number">Phone</label>
-              <div>
-                <input id="phone-number" type="tel" name="phone-number" />
-                <svg width="18" height="18" class="name-icon-person">
+              <div class="input-blue-square">
+                <svg width="18" height="24" class="name-icon-person">
                   <use href="./images/icons.svg#phone-black"></use>
                 </svg>
+                <input
+                  class="input-md w-h-email-phone-name"
+                  id="phone-number"
+                  type="tel"
+                  name="phone-number"
+                />
               </div>
             </div>
             <!-- Email -->
-            <div>
+            <div class="names-distante-gab">
               <label class="names-label" for="Email">Email</label>
-              <div>
-                <input type="email" name="email" />
-                <svg width="18" height="18" class="name-icon-person">
+              <div class="input-blue-square">
+                <svg width="18" height="24" class="name-icon-person">
                   <use href="./images/icons.svg#email-black"></use>
                 </svg>
+                <input
+                  class="input-md w-h-email-phone-name"
+                  type="email"
+                  name="email"
+                />
               </div>
             </div>
             <!-- Comment -->
-            <div>
+            <div class="names-distante-gab">
               <label class="names-label"> Comment</label>
-              <div>
+              <div class="input-textarea-bl-sq">
                 <textarea
+                  class="input-md w-h"
                   name="feedback"
                   rows="5"
                   placeholder="Text input"
@@ -606,8 +623,8 @@
             </div>
             <!-- CheckBox -->
             <div>
-              <input type="checkbox" />
-              <div>
+              <div class="checkbox-label">
+                <input class="checkbox" type="checkbox" />
                 <label class="names-label" for="offers"
                   >I accept the terms and conditions of the
                   <span class="span-label-checkbox">Privacy Policy</span></label

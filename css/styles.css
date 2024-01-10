@@ -118,6 +118,8 @@ ol {
 .name-icon-person {
   fill: black;
   color: black;
+  margin-top: 8px;
+  margin-left: 16px;
 }
 
 .modal-title {
@@ -128,6 +130,11 @@ ol {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.names-distante-gab {
+  margin-bottom: 8px;
 }
 
 .names-label {
@@ -165,6 +172,66 @@ ol {
   border-radius: 4px;
   background: var(--blue-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.input-blue-square {
+  display: flex;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.input-md {
+  border: none;
+  background: none;
+  resize: none;
+  outline: none;
+}
+
+.w-h-email-phone-name {
+  width: 360px;
+  height: 40px;
+}
+
+.w-h {
+  width: 360px;
+  height: 120px;
+}
+
+.input-textarea-bl-sq {
+  width: 360px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.form-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 72px 24px 24px 24px;
+}
+
+.checkbox-label {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  stroke-width: 1px;
+  stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.checkbox:hover,
+.checkbox:focus {
+  fill: var(--OCEAN, #404bbf);
+  stroke-width: 1px;
+  stroke: var(--OCEAN, #404bbf);
 }
 
 /* Close-modal-styling */
@@ -932,9 +999,6 @@ ol {
   font-weight: 400;
   line-height: 200%;
   letter-spacing: 0.48px;
-  border-radius: 4px;
-  border: 1px solid var(--WHITE, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-button {
@@ -946,6 +1010,23 @@ ol {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.64px;
+}
+
+.form-footer-div {
+}
+
+.svg-footer-color {
+  fill: white;
+}
+
+.test {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: row;
 }
 
 .button-font {
@@ -971,4 +1052,10 @@ ol {
   border-color: var(--ocean-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer-form-input {
+  border: none;
+  outline: none;
+  background: none;
 }

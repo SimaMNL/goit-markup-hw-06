@@ -138,6 +138,8 @@ ol {
 }
 
 .names-label {
+  display: block;
+  gap: 8px;
   color: var(--light-slate);
   font-size: 12px;
   font-style: normal;
@@ -154,6 +156,23 @@ ol {
   line-height: 16px;
   letter-spacing: 0.48px;
   text-decoration-line: underline;
+}
+
+.checkboxspan {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.checkicon {
 }
 
 .submit-button-modal {
@@ -225,6 +244,22 @@ ol {
   margin-right: 8px;
   stroke-width: 1px;
   stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkboxspan {
 }
 
 .checkbox:hover,

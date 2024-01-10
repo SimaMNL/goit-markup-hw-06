@@ -624,10 +624,24 @@
             <!-- CheckBox -->
             <div>
               <div class="checkbox-label">
-                <input class="checkbox" type="checkbox" />
-                <label class="names-label" for="offers"
+                <input
+                  class="checkbox visually-hidden"
+                  id="user-privacy"
+                  type="checkbox"
+                  name="user-privacy"
+                  required
+                />
+
+                <label class="names-label" for="user-privacy"
+                  ><span class="checkboxspan"
+                    ><svg class="checkicon" widht="10" height="8">
+                      <use
+                        href="./images/icons.svg#Property-click"
+                      ></use></svg></span
                   >I accept the terms and conditions of the
-                  <span class="span-label-checkbox">Privacy Policy</span></label
+                  <a class="span-label-checkbox" href="link"
+                    >Privacy Policy</a
+                  ></label
                 >
               </div>
             </div>

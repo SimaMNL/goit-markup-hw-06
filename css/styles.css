@@ -183,9 +183,13 @@ ol {
 }
 
 .checkicon {
-  fill: var(--OCEAN, #404bbf);
+  fill: #f4f4fd;
   stroke-width: 1px;
-  stroke: var(--OCEAN, #404bbf);
+  stroke: #f4f4fd;
+}
+
+.checkbox-label:focus-within {
+  fill: #f4f4fd;
 }
 
 .input-md::placeholder {
@@ -208,6 +212,7 @@ ol {
   border-radius: 4px;
   background: var(--blue-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  position: absolute;
 }
 
 .input-blue-square {
@@ -222,6 +227,13 @@ ol {
 .input-blue-square:focus {
   border-radius: 4px;
   border: 1px solid var(--IRIS, #4d5ae5);
+  color: #4d5ae5;
+}
+
+.input-blue-square:focus-within {
+  border-radius: 4px;
+  border: 1px solid var(--IRIS, #4d5ae5);
+  color: #4d5ae5;
 }
 
 .input-md {
@@ -910,6 +922,16 @@ ol {
   max-width: 100%;
 }
 
+.footer-form-input::placeholder {
+  color: var(--WHITE, #fff);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: 0.48px;
+  padding: 8px 212px 8px 16px;
+}
+
 .images-what-we-make:hover .overlay {
   transform: translatey(0);
 }
@@ -1045,6 +1067,7 @@ ol {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.32px;
+  margin-bottom: 16px;
 }
 
 .e-mail-block {
@@ -1057,6 +1080,7 @@ ol {
   font-weight: 400;
   line-height: 200%;
   letter-spacing: 0.48px;
+  position: absolute;
 }
 
 .subscribe-button {
@@ -1074,6 +1098,8 @@ ol {
   position: relative;
   display: flex;
   margin-right: 0;
+  flex-direction: column;
+  margin-left: 80px;
 }
 
 .svg-footer-color {
@@ -1088,6 +1114,7 @@ ol {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: row;
+  position: absolute;
 }
 
 .button-font {
@@ -1104,6 +1131,7 @@ ol {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 284px;
 }
 
 .button-font:hover,

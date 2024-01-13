@@ -121,12 +121,12 @@ ol {
   color: black;
   margin-top: 8px;
   margin-left: 16px;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .name-icon-person:hover,
-.name-icon-person:focus {
-  fill: #4d5ae5;
-} */
 
 .input-blue-square > .name-icon-person:focus,
 :hover {
@@ -143,10 +143,6 @@ ol {
   letter-spacing: 0.32px;
   margin-bottom: 16px;
   text-align: center;
-}
-
-.names-distante-gab {
-  margin-bottom: 8px;
 }
 
 .names-label {
@@ -222,8 +218,6 @@ ol {
   position: relative;
   width: 360px;
   height: 40px;
-  border-radius: 4px;
-  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
 }
 
 .input-blue-square:hover,
@@ -243,12 +237,20 @@ ol {
   border: none;
   background: none;
   resize: none;
-  outline: none;
+  outline: transparent;
 }
 
 .w-h-email-phone-name {
   width: 360px;
   height: 40px;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.w-h-email-phone-name:focus {
+  border-color: #4d5ae5;
 }
 
 .w-h {
@@ -257,6 +259,7 @@ ol {
 }
 
 .input-textarea-bl-sq {
+  margin-bottom: 16px;
   width: 360px;
   height: 120px;
   border-radius: 4px;

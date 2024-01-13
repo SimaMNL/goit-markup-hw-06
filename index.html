@@ -616,40 +616,36 @@
             </div>
           </div>
           <!-- Comment -->
-          <div class="names-distante-gab">
-            <label class="names-label"> Comment</label>
-            <div class="input-textarea-bl-sq">
-              <textarea
-                class="input-md w-h"
-                name="feedback"
-                rows="5"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+          <div class="input-textarea-bl-sq">
+            <label class="names-label" for="user-comment"> Comment</label>
+            <textarea
+              id="user-comment"
+              class="input-md w-h"
+              name="feedback"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <!-- CheckBox -->
-          <div>
-            <div class="checkbox-label">
-              <input
-                class="checkbox visually-hidden"
-                id="user-privacy"
-                type="checkbox"
-                name="user-privacy"
-                required
-              />
-
-              <label class="names-label" for="user-privacy"
-                ><span class="checkboxspan"
-                  ><svg class="checkicon">
-                    <use
-                      href="./images/icons.svg#property-click"
-                    ></use></svg></span
-                >I accept the terms and conditions of the
-                <a class="span-label-checkbox" href="link"
-                  >Privacy Policy</a
-                ></label
-              >
-            </div>
+          <div class="checkbox-label">
+            <input
+              class="checkbox visually-hidden"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              required
+            />
+            <label class="names-label" for="user-privacy"
+              ><span class="checkboxspan"
+                ><svg class="checkicon">
+                  <use
+                    href="./images/icons.svg#property-click"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="span-label-checkbox" href="link"
+                >Privacy Policy</a
+              ></label
+            >
           </div>
           <!-- Send button -->
           <button class="submit-button-modal" type="submit">Send</button>

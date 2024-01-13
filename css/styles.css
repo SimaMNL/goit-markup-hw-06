@@ -1101,6 +1101,7 @@ ol {
 
 .svg-footer-color {
   fill: white;
+  margin-left: 16px;
 }
 
 .form-label {
@@ -1122,7 +1123,6 @@ ol {
   align-items: center;
   min-width: 165px;
   height: 40px;
-  gap: 16px;
   border-radius: 4px;
   background: var(--blue-color);
   cursor: pointer;

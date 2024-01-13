@@ -265,7 +265,10 @@ ol {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 72px 24px 24px 24px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
 }
 
 .checkbox-label {

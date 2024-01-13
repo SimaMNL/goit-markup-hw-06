@@ -109,11 +109,6 @@ ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-close-svg:hover,
-.modal-close-svg:focus {
-  fill: #ffffff;
-} */
-
 /* Modal-Styling */
 
 .name-icon-person {
@@ -143,6 +138,10 @@ ol {
   letter-spacing: 0.32px;
   margin-bottom: 16px;
   text-align: center;
+}
+
+.names-distante-gab {
+  margin-bottom: 8px;
 }
 
 .names-label {
@@ -179,6 +178,7 @@ ol {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  background-color: #404bbf;
 }
 
 .checkicon {
@@ -205,13 +205,14 @@ ol {
   padding: 16px 32px;
   border: none;
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   gap: 10px;
   border-radius: 4px;
   background: var(--blue-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   position: absolute;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-blue-square {
@@ -238,13 +239,27 @@ ol {
   background: none;
   resize: none;
   outline: transparent;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  width: 360px;
+  height: 120px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.input-md:focus {
+  border-color: #4d5ae5;
 }
 
 .w-h-email-phone-name {
   width: 360px;
   height: 40px;
   padding-left: 38px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
 }
@@ -260,10 +275,6 @@ ol {
 
 .input-textarea-bl-sq {
   margin-bottom: 16px;
-  width: 360px;
-  height: 120px;
-  border-radius: 4px;
-  border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
 }
 
 .form-body {
@@ -301,9 +312,6 @@ ol {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.checkboxspan {
 }
 
 .checkbox:hover,

@@ -156,8 +156,9 @@ ol {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 116.667%;
+  line-height: 1.17;
   letter-spacing: 0.48px;
+  margin-bottom: 4px;
 }
 
 .span-label-checkbox {
@@ -218,7 +219,7 @@ ol {
 }
 
 .input-blue-square {
-  display: flex;
+  position: relative;
   width: 360px;
   height: 40px;
   border-radius: 4px;

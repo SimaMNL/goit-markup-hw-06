@@ -230,7 +230,15 @@ input:checked + .names-label span:first-child {
   color: #4d5ae5;
 } */
 
-.input-blue-square:focus + .name-icon-person {
+#phone-number-id:focus + .name-icon-person {
+  fill: #4d5ae5;
+}
+
+#Email:focus + .name-icon-person {
+  fill: #4d5ae5;
+}
+
+#user-comment:focus + .name-icon-person {
   fill: #4d5ae5;
 }
 

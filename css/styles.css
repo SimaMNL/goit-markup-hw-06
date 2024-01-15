@@ -114,18 +114,12 @@ ol {
 .name-icon-person {
   top: 50%;
   fill: black;
-  color: black;
   margin-top: 8px;
   margin-left: 16px;
   position: absolute;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-blue-square > .name-icon-person:focus,
-:hover {
-  fill: #4d5ae5;
 }
 
 .modal-title {
@@ -192,9 +186,6 @@ input:checked + .names-label span:first-child {
   fill: #f3f3fd;
 }
 
-.checkbox-label:focus-within {
-}
-
 .submit-button-modal {
   color: var(--white-color);
   font-size: 16px;
@@ -238,7 +229,7 @@ input:checked + .names-label span:first-child {
   fill: #4d5ae5;
 }
 
-#user-comment:focus + .name-icon-person {
+#user-name:focus + .name-icon-person {
   fill: #4d5ae5;
 }
 

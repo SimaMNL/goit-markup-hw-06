@@ -1186,6 +1186,7 @@ input:checked + .names-label span:first-child {
   }
   .sidebar-mobile {
     position: fixed;
+    /* sde */
     top: 0;
     right: 0;
     width: 428px;

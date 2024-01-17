@@ -22,34 +22,42 @@
     <!-- Upper Section -->
     <header class="header-container">
       <!-- Web site  -->
-      <div class="parent container-parent container">
+      <div class="parent container-parent container sidebar-mobile">
         <nav class="nav-container">
           <a class="title-web-name link" href="./index.html"
             >Web<span class="title-studio-name">Studio</span></a
           >
-          <ul class="list nav-list-items">
-            <li>
+          <button class="hamburger-mobile-button">
+            <svg width="32" height="22" class="hamburger-mobile">
+              <use href="./images/icons.svg#charm_menu-hamburger"></use>
+            </svg>
+          </button>
+          <ul class="list nav-list-items navlist-sidebar-mobile">
+            <li class="hidden-on-mobile">
               <a
                 class="nav-link underline-nav-link-studio link"
                 href="./index.html"
                 >Studio</a
               >
             </li>
-            <li>
+
+            <li class="hidden-on-mobile">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li><a class="nav-link link" href="">Contacts</a></li>
+            <li class="hidden-on-mobile">
+              <a class="nav-link link" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <!-- Contact Info -->
         <address class="address-header">
-          <ul class="list nav-list-items-address">
-            <li>
+          <ul class="list nav-list-items-address sidebar-mobile-address">
+            <li class="hidden-on-mobile">
               <a class="list-contact link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="hidden-on-mobile">
               <a class="list-contact link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
